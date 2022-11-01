@@ -1,6 +1,8 @@
 "use strict";
+
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Series = exports.Episode = exports.Movie = void 0;
+
 class Show {
     constructor(name, genre, releaseDate) {
         this.name = name;
@@ -14,10 +16,10 @@ class Movie extends Show {
     }
     getDuration() {
         return ('one hour');
-    }
-    ;
+    };
 }
 exports.Movie = Movie;
+
 class Episode extends Show {
     constructor(name, genre, releaseDate) {
         super(name, genre, releaseDate);
@@ -27,6 +29,7 @@ class Episode extends Show {
     }
 }
 exports.Episode = Episode;
+
 class Series extends Show {
     constructor(name, genre, releaseDate) {
         super(name, genre, releaseDate);

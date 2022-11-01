@@ -1,6 +1,9 @@
 "use strict";
+
 Object.defineProperty(exports, "__esModule", { value: true });
+
 var Genre;
+
 (function (Genre) {
     Genre[Genre["Action"] = 0] = "Action";
     Genre[Genre["Comedy"] = 1] = "Comedy";
@@ -11,5 +14,6 @@ var Genre;
     Genre[Genre["Romance"] = 6] = "Romance";
     Genre[Genre["Thriller"] = 7] = "Thriller";
 })(Genre || (Genre = {}));
+
 exports.default = Genre;
 //# sourceMappingURL=genre.js.map

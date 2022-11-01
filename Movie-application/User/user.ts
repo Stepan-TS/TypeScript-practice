@@ -1,5 +1,6 @@
-import StreamingService from "./streaming-service";
-import Subscription from "./subscription";
+import StreamingService from "../StreamingService/streaming-service";
+import Subscription from "../Subscription/subscription";
+
 class User {
     subscriptions: Array<Subscription>;
 

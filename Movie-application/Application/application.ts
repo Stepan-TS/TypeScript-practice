@@ -1,7 +1,7 @@
-import Genre from "./genre"
-import StreamingService from "./streaming-service"
-import {Movie} from "./show"    
-import User from "./user"   
+import Genre from "../Genre/genre"
+import StreamingService from "../StreamingService/streaming-service"
+import {Movie} from "../Show/show"    
+import User from "../User/user"   
 
 const newMovie = new Movie("Пропала грамота",Genre.Comedy,new Date());
 const stremingService = new StreamingService("megogo");

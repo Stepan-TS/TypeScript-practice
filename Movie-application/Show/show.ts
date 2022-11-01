@@ -1,4 +1,4 @@
-import Genre from "./genre";
+import Genre from   '../Genre/genre';
 
 abstract class Show {
     name:string;
@@ -16,13 +16,13 @@ abstract class Show {
 
 class Movie extends Show {
     constructor(name:string, genre:Genre, releaseDate:Date){
-        super(name,genre,releaseDate);
+    super(name,genre,releaseDate);
     
-}
+    }
 
-getDuration(): string{
-    return ('one hour')
-};
+    getDuration(): string{
+         return ('one hour')
+    };
 }
 
 class Episode extends Show {
@@ -30,10 +30,9 @@ class Episode extends Show {
         super(name,genre,releaseDate);
     }
 
-getDuration(): string{
-    return ('two hour')
-
-}
+    getDuration(): string{
+         return ('two hour')
+    }
 }
 
 class Series extends Show {
@@ -41,12 +40,12 @@ class Series extends Show {
    
     constructor(name:string, genre:Genre, releaseDate:Date){
         super(name,genre,releaseDate);
-    this.episodes=new Array<string>();
+        this.episodes=new Array<string>();
     }
 
-getDuration(): string{
-    return ('three hour')
-}
+    getDuration(): string{
+        return ('three hour')
+    }
 }
 
 
